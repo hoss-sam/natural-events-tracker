@@ -1,6 +1,4 @@
 import {Marker, Popup, TileLayer, MapContainer} from "react-leaflet"
-import { Icon, popup } from "leaflet"
-import fire from "../assets/pine-tree-fire.svg"
 import EventMarker from "./EventMarker"
 
 // const wFire = new Icon({
@@ -24,12 +22,12 @@ const Maps =({eventData}) => {
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={[40.04449, -105.23574]}>
+            {/* <Marker position={[40.04449, -105.23574]}>
                 <Popup>
                     sup dude!
                 </Popup>
                 
-            </Marker>
+            </Marker> */}
             {/* {markers} */}
             <EventMarker eventData = {eventData}/>
         </MapContainer>
