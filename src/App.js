@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react"
 import Maps from "./components/Maps"
+import Header from "./components/Header"
 
 function App() {
   const [eventData, setEventData] = useState([])
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div>
+      <Header/>
       <Maps eventData = {eventData} />
     </div>
   );
